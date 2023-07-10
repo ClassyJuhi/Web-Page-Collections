@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belanosima&family=Crimson+Text:ital@0;1&family=Indie+Flower&family=Lato:wght@700&family=Lobster&family=Mochiy+Pop+P+One&family=Montserrat+Alternates:wght@600&family=Montserrat:ital,wght@0,200;1,200&family=Poppins:wght@500&family=Rancho&family=Rubik+Pixels&family=Sedgwick+Ave+Display&family=Tilt+Prism&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: arial, sans-serif;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 10px;
+    left: 0;
+}
+
+nav ul {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 5px 10px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: black;
+}
+
+nav ul li a:hover {
+    text-decoration: 1px solid underline;
+}
+
+nav ul li input[type="button"] {
+    padding: 5px 8px;
+    background-color: #186dee;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.maincontainer .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.google {
+    margin-top: 12%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 80px;
+    transform: translateX(-22px);
+}
+
+.google .font1 {
+    height: 168px;
+    color: #186dee;
+    font-size: 100px;
+    display: flex;
+    align-items: flex-start;
+    transform: translateX(22px);
+}
+
+.google .font2 {
+    color: #db4733;
+    transform: translateX(18px);
+}
+
+.google .font3 {
+    color: #ffba03;
+    transform: translateX(15px);
+}
+
+.google .font4 {
+    color: #186dee;
+    transform: translateX(12px);
+}
+
+.google .font5 {
+    color: #009955;
+    transform: translateX(8px);
+}
+
+.google .font6 {
+    color: #db4733;
+    transform: rotate(345deg);
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.search {
+    width: 45%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #706e6e;
+    border-radius: 25px;
+}
+
+#search {
+    width: 80%;
+    height: 45px;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+    background-color: transparent;
+}
+
+.searchicon img {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.mic img {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.container input[type="button"] {
+    padding: 12px;
+    margin: 15px 5px 10px 5px;
+    border-radius: 5px;
+    outline: none;
+    color: #706e6e;
+    background-color: #e9e6e6;
+    border: 1px solid #706e6e;
+}
+
+.container input[type="button"]:hover {
+    border: none;
+}
+
+.languages {
+    margin-top: 20px;
+    font-size: 13px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.languages a {
+    margin: 0 2px;
+    color: #1a0dab;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #e9e6e6;
+}
+
+footer .footer1 {
+    padding: 12px 0 10px 15px;
+}
+
+footer .footer2 {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #706e6e;
+    font-size: 14px;
+}
+
+footer .footer2 ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer .footer2 ul li {
+    padding: 5px;
+    margin: 5px 10px;
+    list-style-type: none;
+}
+
+footer .footer2 ul li a {
+    color: #706e6e;
+}
+
+footer .footer2 ul li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    .google {
+        margin-top: 25%;
+    }
+
+    .search {
+        width: 90%;
+    }
+
+    footer .footer2 ul li {
+        margin: 0 2px;
+    }
+}
