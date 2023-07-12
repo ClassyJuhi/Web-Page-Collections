@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.maincontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.signinbackground{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Netflix/assets/netflix-codes.png);
+    opacity: 0.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.signinpage{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+
+h1{
+    font-size: 50px;
+}
+.maincontainer .section{
+    width: 100%;
+    border-top: 5px solid grey;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section11{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.section22{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.section33{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+}
+
+.section44{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.section44 .kids img{
+    height: 400px;
+    width: auto;
+}
+
+
+.section55 {
+    height: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 5px solid grey;
+    border-bottom: 5px solid grey;
+    background-color: black;
+}
+.section55 label{
+    width: 70vw;
+    padding: 15px 20px;
+    background-color:rgb(48, 48, 48);
+    font-size: 25px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.section55 label .add{
+    display: block;
+    font-size: 50px;
+}.section55 label .close{
+    display: none;
+    font-size: 50px;
+}
+.section55 label:hover{
+    background-color: #595959;
+}
+.section55 .answer{
+    display: none;
+    width: 70vw;
+    padding: 30px 20px;
+    margin-bottom: 5px;
+    background-color: 	rgb(48, 48, 48);
+    font-size: 25px;
+}
+.section55 h1{
+    margin-bottom: 20px;
+}
+.section55 .ready{
+    font-size: 20px;
+    margin: 30px 0 20px 0;
+}
+.section55 .sendmail{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+}
+.section55 .sendmail input[type="email"]{
+    padding: 20px;
+    width: 70%;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid gainsboro;
+    border-radius: 2px;
+    color: white;
+    margin-right: 5px;
+    font-size: 20px;
+}
+.section55 .sendmail input[type="button"]{
+    padding: 21px 25px;
+    width: 28%;
+    background-color: #df0707;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    font-size: 20px;
+}
+.section55 .sendmail input[type="button"]:hover{
+    background-color: 	#ba0c0c;
+}
+
+
+
+
+input[type="checkbox"]{
+    display: none;
+}
+
+
+#question1:checked ~ label .add1{
+    display: none;
+}
+#question1:checked ~ label .close1{
+    display: block;
+}
+
+#question2:checked ~ label .add2{
+    display: none;
+}
+#question2:checked ~ label .close2{
+    display: block;
+}
+
+#question3:checked ~ label .add3{
+    display: none;
+}
+#question3:checked ~ label .close3{
+    display: block;
+}
+
+#question4:checked ~ label .add4{
+    display: none;
+}
+#question4:checked ~ label .close4{
+    display: block;
+}
+
+#question5:checked ~ label .add5{
+    display: none;
+}
+#question5:checked ~ label .close5{
+    display: block;
+}
+
+#question6:checked ~ label .add6{
+    display: none;
+}
+#question6:checked ~ label .close6{
+    display: block;
+}
+
+
+
+
+
+#question1:checked ~ .answer1{
+    display: block;
+}
+#question2:checked ~ .answer2{
+    display: block;
+}
+#question3:checked ~ .answer3{
+    display: block;
+}
+#question4:checked ~ .answer4{
+    display: block;
+}
+#question5:checked ~ .answer5{
+    display: block;
+}
+#question6:checked ~ .answer6{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 5% 0 5% 15%;
+}
+footer h3{
+    margin-bottom: 20px;
+}
+footer h3 a{
+    color: white;
+}
+footer h4{
+    margin-top: 50px;
+}
+footer .contactlinks{
+    height: 150px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer .contactlinks h4{
+    padding: 5px;
+    margin: 0;
+}
+footer .contactlinks h4 a{
+    color: white;
+}
+footer .language{
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding: 5px;
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .language input{
+    width: 75%;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,582 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to top right, blue, black, #4198a9, #41a952, #2043d1);
+}
+
+.shape-container {
+    position: relative;
+    width: 100%;
+    height: 2100px;
+}
+
+.shape {
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top right, rgb(250, 0, 254), #2043d1);
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+
+.shape:nth-child(2n+2) {
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    background-image: linear-gradient(to top right, purple, pink, white);
+}
+
+.shape:nth-child(3n) {
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to top right, #007c9b, #fa1e25);
+}
+
+.shape1 {
+    top: 50px;
+    left: 50px;
+    animation-name: shape1;
+}
+
+.shape2 {
+    top: 250px;
+    right: 0px;
+    animation-name: shape2;
+}
+
+.shape3 {
+    top: 250px;
+    left: 600px;
+    animation-name: shape3;
+}
+
+.shape4 {
+    top: 400px;
+    left: 500px;
+    animation-name: shape4;
+}
+
+.shape5 {
+    top: 600px;
+    left: 50px;
+    animation-name: shape5;
+}
+
+.shape6 {
+    top: 900px;
+    left: 15px;
+    animation-name: shape6;
+}
+
+.shape7 {
+    bottom: 500px;
+    right: 60px;
+    animation-name: shape7;
+}
+
+.shape8 {
+    bottom: 250px;
+    left: 400px;
+    animation-name: shape8;
+}
+
+.shape9 {
+    bottom: 190px;
+    right: 300px;
+    animation-name: shape9;
+}
+
+.shape10 {
+    bottom: 10px;
+    left: 150px;
+    animation-name: shape10;
+}
+
+
+@keyframes shape1 {
+    0% {
+        top: 10px;
+        left: 50px;
+    }
+
+    50% {
+        transform: translate(900px, 10px);
+    }
+
+    100% {
+        top: 10px;
+        left: 50px;
+    }
+}
+
+@keyframes shape2 {
+    0% {
+        top: 250px;
+        right: 0px;
+    }
+
+    50% {
+        transform: translate(-900px, -250px);
+    }
+
+    100% {
+        top: 250px;
+        right: 0px;
+    }
+}
+
+@keyframes shape3 {
+    0% {
+        top: 250px;
+        left: 600px;
+    }
+
+    50% {
+        transform: translate(450px, 100px);
+    }
+
+    100% {
+        top: 250px;
+        left: 600px;
+    }
+}
+
+@keyframes shape4 {
+    0% {
+        top: 500px;
+        left: 500px;
+    }
+
+    50% {
+        transform: translate(-500px, -50px);
+    }
+
+    100% {
+        top: 500px;
+        left: 500px;
+    }
+}
+
+@keyframes shape5 {
+    0% {
+        top: 600px;
+        left: 50px;
+    }
+
+    50% {
+        transform: translate(800px, -250px);
+    }
+
+    100% {
+        top: 600px;
+        left: 50px;
+    }
+}
+
+@keyframes shape6 {
+    0% {
+        top: 900px;
+        left: 5px;
+    }
+
+    50% {
+        transform: translate(1150px, 300px);
+    }
+
+    100% {
+        top: 900px;
+        left: 5px;
+    }
+}
+
+@keyframes shape7 {
+    0% {
+        bottom: 500px;
+        right: 60px;
+    }
+
+    50% {
+        transform: translate(-1000px, 300px);
+    }
+
+    100% {
+        bottom: 500px;
+        right: 60px;
+    }
+}
+
+@keyframes shape8 {
+    0% {
+        bottom: 250px;
+        left: 0px;
+    }
+
+    50% {
+        transform: translate(900px, -200px);
+    }
+
+    100% {
+        bottom: 250px;
+        left: 0px;
+    }
+}
+
+@keyframes shape9 {
+    0% {
+        bottom: 190px;
+        right: 5px;
+    }
+
+    50% {
+        transform: translate(-1000px, 150px);
+    }
+
+    100% {
+        bottom: 190px;
+        right: 5px;
+    }
+}
+
+@keyframes shape10 {
+    0% {
+        bottom: 0px;
+        left: 150px;
+    }
+
+    50% {
+        transform: translate(800px, 0px);
+    }
+
+    100% {
+        bottom: 0px;
+        left: 150px;
+    }
+}
+/* nav bar */
+
+nav {
+    height: 60px;
+    width: 100%;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+    position:fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+  
+  nav img {
+    height: 50px;
+    width: 100px;
+    margin: 5px 15px;
+    border-radius: 15px;
+    opacity: 0.5;
+  }
+  
+  nav .search{
+    height: 40px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255, 0.25);
+    backdrop-filter: blur(2px);
+    border: none;
+    outline: none;
+    padding-left: 25px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  li {
+    padding: 0 20px;
+    margin: 10px;
+    font-size: x-large;
+    font-weight: 600;
+  }
+  
+  li:hover {
+    background-color: rgb(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px);
+    padding: 6px 20px;
+    border-radius: 15px;
+  }
+
+
+
+  /* poster */
+.poster-container{
+    height: 300px;
+    width: 1000px;
+    margin: auto;
+    position:relative;
+    top:100px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255, 0.02);
+    backdrop-filter: blur(5px);
+    display: flex;
+  }
+  .poster{
+    height: 200px;
+    width: 500px;
+    margin: 50px auto;
+    background-color: rgb(0, 0, 0, 0.07);
+    backdrop-filter: blur(5px);
+    color: white;
+    font-family: 'Sedgwick Ave Display', cursive;
+    border-radius: 15px;
+  }
+  h1 {
+    text-align: center;
+    padding: 50px 0 35px 0;
+    font-size: 45px;
+  }
+  p {
+    text-align:right;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+
+
+
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    height: 1400px;
+    width: 90%;
+    margin: 150px auto;
+    background-color: rgb(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+  }
+  
+  .image {
+    height: 200px;
+    width: 30%;
+    margin: 15px;
+    overflow: hidden;
+    perspective: 1000px;
+    border-radius: 15px;
+  }
+  
+  .image img {
+    height: 200px;
+    width: 350px;
+  }
+  
+  .image::before {
+    content: "";
+    height: 200px;
+    width: 350px;
+    border-radius: 15px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: bottom center;
+    transition: transform 2s;
+  }
+  
+  .image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 350px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateX(-120deg);
+    transform-origin: top center;
+    transition: transform 2s;
+  }
+  
+  .image:hover::before {
+    transform: rotateX(180deg);
+  }
+  
+  .image:hover::after {
+    transform: rotateX(0deg);
+  }
+  
+  .image1::before {
+    background-image: url(https://www.tajmahalinagra.com/wp-content/uploads/2023/01/One-Day.jpg);
+  }
+  
+  .image1::after {
+    content: "Taj Mahal India";
+  }
+  
+  .image2::before {
+    background-image: url(https://www.througheternity.com/upload/CONF83/20200305/Colosseum_portrait_1_-tSa-1200X630.jpeg);
+  }
+  
+  .image2::after {
+    content: "The Colosseum Rome";
+  }
+  
+  .image3::before {
+    background-image: url(https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/A-DK-dreamstime_xxl_30591259_n8yru9.jpg);
+  }
+  
+  .image3::after {
+    content: "St. Basil's Cathedral Russia";
+  }
+  
+  .image4::before {
+    background-image: url(https://static.dw.com/image/41137716_605.jpg);
+  }
+  
+  .image4::after {
+    content: "Tower in Pisa, Italy";
+  }
+  
+  .image5::before {
+    background-image: url(https://resources.thomascook.in/images/holidays/sightSeeing/Burjkhalifadubai850.jpg);
+  }
+  
+  .image5::after {
+    content: "Burj Khalifa Dubai, UAE";
+  }
+  
+  .image6::before {
+    background-image: url(https://placesjournal.org/wp-content/uploads/2020/08/Jamaleddein-Hagia-Sophia-12.jpg);
+  }
+  
+  .image6::after {
+    content: "Hagia Sophia Istanbul, Turkey";
+  }
+  
+  .image7::before {
+    background-image: url(https://www.floridatoday.com/gcdn/presto/2023/01/13/PBRE/a81af65f-9532-448e-8d94-317e2f278a32-Fallingwater-005_copy.jpg?crop=3999,2250,x0,y194&width=3200&height=1801&format=pjpg&auto=webp);
+  }
+  
+  .image7::after {
+    content: "Fallingwater United States";
+  }
+  
+  .image8::before {
+    background-image: url(https://cdn-imgix.headout.com/mircobrands-content/image/b299bd25f75c1e299c877fed458576fa-Sagrada%20Familia%20-%20Facades.jpg);
+  }
+  
+  .image8::after {
+    content: "La Sagrada Familia Spain";
+  }
+  
+  .image9::before {
+    background-image: url(https://static.toiimg.com/photo/52614524.cms);
+  }
+  
+  .image9::after {
+    content: "Frauenkirche Dresden, Germany";
+  }
+  
+  .image10::before {
+    background-image: url(https://resources.thomascook.in/images/holidays/sightSeeing/Burjkhalifadubai850.jpg);
+  }
+  
+  .image10::after {
+    content: "Burj Khalifa Dubai, UAE";
+  }
+  
+  .image11::before {
+    background-image: url(https://resources.thomascook.in/images/holidays/sightSeeing/Burjkhalifadubai850.jpg);
+  }
+  
+  .image11::after {
+    content: "Burj Khalifa Dubai, UAE";
+  }
+  
+  .image12::before {
+    background-image: url(https://resources.thomascook.in/images/holidays/sightSeeing/Burjkhalifadubai850.jpg);
+  }
+  
+  .image12::after {
+    content: "Burj Khalifa Dubai, UAE";
+  }
+  
+  .image13::before {
+    background-image: url(https://resources.thomascook.in/images/holidays/sightSeeing/Burjkhalifadubai850.jpg);
+  }
+  
+  .image13::after {
+    content: "Burj Khalifa Dubai, UAE";
+  }
+  
+  .image14::before {
+    background-image: url(https://resources.thomascook.in/images/holidays/sightSeeing/Burjkhalifadubai850.jpg);
+  }
+  
+  .image14::after {
+    content: "Burj Khalifa Dubai, UAE";
+  }
+  
+  .image15::before {
+    background-image: url(https://resources.thomascook.in/images/holidays/sightSeeing/Burjkhalifadubai850.jpg);
+  }
+  
+  .image15::after {
+    content: "Burj Khalifa Dubai, UAE";
+  }
+  
+  .image16::before {
+    background-image: url(https://resources.thomascook.in/images/holidays/sightSeeing/Burjkhalifadubai850.jpg);
+  }
+  
+  .image16::after {
+    content: "Burj Khalifa Dubai, UAE";
+  }
+  
+  .image17::before {
+    background-image: url(https://resources.thomascook.in/images/holidays/sightSeeing/Burjkhalifadubai850.jpg);
+  }
+  
+  .image17::after {
+    content: "Burj Khalifa Dubai, UAE";
+  }
+  
+  .image18::before {
+    background-image: url(https://resources.thomascook.in/images/holidays/sightSeeing/Burjkhalifadubai850.jpg);
+  }
+  
+  .image18::after {
+    content: "Burj Khalifa Dubai, UAE";
+  }
+  footer {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.05);
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: x-large;
+    font-weight: 500;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
