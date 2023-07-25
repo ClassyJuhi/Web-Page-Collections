@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="leftnav">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-brands fa-square-github"></i>
+            <div class="username">ClassyJuhi</div>
+        </div>
+        <div class="rightnav">
+            <div class="search"></div>
+            <div class="dropdown"></div>
+            <div class="issues"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                    data-view-component="true" class="octicon octicon-issue-opened Button-visual">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
+                </svg></div>
+            <div class="pull"><i class="fa-solid fa-code-pull-request"></i></div>
+            <div class="notification">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                    data-view-component="true" class="octicon octicon-inbox color-fg-muted mr-0">
+                    <path
+                        d="M2.8 2.06A1.75 1.75 0 0 1 4.41 1h7.18c.7 0 1.333.417 1.61 1.06l2.74 6.395c.04.093.06.194.06.295v4.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-4.5c0-.101.02-.202.06-.295Zm1.61.44a.25.25 0 0 0-.23.152L1.887 8H4.75a.75.75 0 0 1 .6.3L6.625 10h2.75l1.275-1.7a.75.75 0 0 1 .6-.3h2.863L11.82 2.652a.25.25 0 0 0-.23-.152Zm10.09 7h-2.875l-1.275 1.7a.75.75 0 0 1-.6.3h-3.5a.75.75 0 0 1-.6-.3L4.375 9.5H1.5v3.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="image"></div>
+        </div>
+    </nav>
+
+    <nav class="nav2">
+        <ul>
+            <li><i class="fa-solid fa-book-open"></i>Overview</li>
+            <li><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                    data-view-component="true" class="octicon octicon-repo UnderlineNav-octicon">
+                    <path
+                        d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                    </path>
+                </svg>
+                Repositories
+                <span class="data">23</span>
+            </li>
+            <li><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                    data-view-component="true" class="octicon octicon-table UnderlineNav-octicon">
+                    <path
+                        d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z">
+                    </path>
+                </svg>
+                Projects</li>
+            <li><i class="fa-solid fa-dice-d6"></i>Packages</li>
+            <li><i class="fa-regular fa-star"></i>Stars
+                <span class="data">2</span>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="mainbox">
+        <div class="sidebar">
+            <div class="profileimage">
+                <img src="assets/juhi.jpeg" alt="">
+                <div class="status">💻</div>
+            </div>
+            <div class="name">Juhi</div>
+            <div class="username">ClassyJuhi</div>
+            <p>Frontend fanatic on a mission to make the web sparkle ✨ | HTML | CSS | JavaScript juggler</p>
+            <input type="button" value="Edit profile">
+            <span class="follow">
+                <a href="#">
+                    <span class="material-symbols-outlined">group</span>
+                    <span>2</span>
+                    <span>Followers</span>
+                </a>
+                <a href="#">
+                    <span>.</span>
+                    <span>3</span>
+                    <span>Following</span>
+                </a>
+            </span>
+            <div class="location"><span class="material-symbols-outlined">location_on</span>Delhi, India</div>
+            <div class="time"><i class="fa-regular fa-clock"></i>07:58 <span class="utc">(UTC +05:30)</span></div>
+            <div class="link"><i class="fa-solid fa-link"></i>
+                <a href="https://codepen.io/Classy_Juhi">https://codepen.io/Classy_Juhi</a>
+            </div>
+            <div class="link"><i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/classy-juhi/?originalSubdomain=in">in/classy-juhi</a>
+            </div>
+            <hr>
+            <h4>Achivements</h4>
+            <div class="achivements">
+                <div class="achivement"><img
+                        src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png"
+                        alt=""></div>
+                <div class="achivement"><img
+                        src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png"
+                        alt=""></div>
+                <div class="achivement"><img
+                        src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png"
+                        alt="">
+                </div>
+            </div>
+            <span>
+                <input type="button" class="beta" value="Beta">
+                <a href="#" class="feedback">Send feedback</a>
+            </span>
+        </div>
+        <div class="maincontainer">
+            <div class="navrepo">
+                <p>Populer repositories</p>
+                <a href="#">Customize your pins</a>
+            </div>
+            <div class="repositories">
+                <div class="repository repository1">
+                    <div class="nav">
+                        <div class="title">Blogging-Bonanza</div>
+                        <input type="button" value="Public">
+                    </div>
+                    <p>Blogging Bonanza is a responsive and user-friendly platform built with HTML, CSS, and JavaScript.
+                        It features easy sign-up, login, and profile management, a dynamic blogging page, a sleek
+                        navigatio…</p>
+                    <span>
+                        <div class="language">
+                            <div class="color"></div>
+                            <div class="languagename">HTML</div>
+                        </div>
+                        <div class="star">
+                            <i class="fa-regular fa-star"></i>1
+                        </div>
+                    </span>
+                </div>
+                <div class="repository repository2">
+                    <div class="nav">
+                        <div class="title">CSS-Design-Lab</div>
+                        <input type="button" value="Public">
+                    </div>
+                    <p>Daily CSS experiments and designs for inspiration.</p>
+                    <span>
+                        <div class="language">
+                            <div class="color"></div>
+                            <div class="languagename">CSS</div>
+                        </div>
+                        <div class="star">
+                            <i class="fa-regular fa-star"></i>1
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="repositories">
+                <div class="repository repository3">
+                    <div class="nav">
+                        <div class="title">Web-Page-Collections</div>
+                        <input type="button" value="Public">
+                    </div>
+                    <p></p>
+                    <span>
+                        <div class="language">
+                            <div class="color"></div>
+                            <div class="languagename">CSS</div>
+                        </div>
+                        <div class="star">
+                            <i class="fa-regular fa-star"></i>1
+                        </div>
+                    </span>
+                </div>
+                <div class="repository repository4">
+                    <div class="nav">
+                        <div class="title">MusicPlayer</div>
+                        <input type="button" value="Public">
+                    </div>
+                    <p>This is a music player web application built using HTML, CSS, and JavaScript. It allows users to
+                        play and control their music tracks in a simple and intuitive interface.</p>
+                    <span>
+                        <div class="language">
+                            <div class="color"></div>
+                            <div class="languagename">HTML</div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="repositories">
+                <div class="repository repository5">
+                    <div class="nav">
+                        <div class="title">Portfolio-website</div>
+                        <input type="button" value="Public">
+                    </div>
+                    <p>Welcome to my portfolio website! I am a Front-End Developer and this website showcases my work
+                        and achievements. You can browse through my portfolio to see some of my best projects and learn
+                        more a…</p>
+                    <span>
+                        <div class="language">
+                            <div class="color"></div>
+                            <div class="languagename">HTML</div>
+                        </div>
+                    </span>
+                </div>
+                <div class="repository repository6">
+                    <div class="nav">
+                        <div class="title">Image-Gallery</div>
+                        <input type="button" value="Public">
+                    </div>
+                    <p>Introducing our image gallery app! Discover and enjoy a collection of stunning, high-quality
+                        images uploaded by us. With a clean and user-friendly interface, you can easily browse and save
+                        your fav…</p>
+                    <span>
+                        <div class="language">
+                            <div class="color"></div>
+                            <div class="languagename">HTML</div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+
+
+
+            <div class="contributionyear">
+                <p>259 contributions in the last year</p>
+                <select>
+                    <option><a href="#">Contribution settings</a></option>
+                </select>
+            </div>
+
+            <div class="contribution">
+                <table>
+                    <thead class="head">
+                        <tr>
+                            <th id="day" class="header"></th>
+                            <th class="month" colspan="5">Jul</th>
+                            <th class="month" colspan="4">Aug</th>
+                            <th class="month" colspan="4">Sep</th>
+                            <th class="month" colspan="4">Oct</th>
+                            <th class="month" colspan="4">Nov</th>
+                            <th class="month" colspan="4">Dec</th>
+                            <th class="month" colspan="5">Jan</th>
+                            <th class="month" colspan="4">Feb</th>
+                            <th class="month" colspan="4">Mar</th>
+                            <th class="month" colspan="4">Apr</th>
+                            <th class="month" colspan="4">May</th>
+                            <th class="month" colspan="4">Jun</th>
+                        </tr>
+                    </thead>
+                    <tbody class="body">
+                        <tr>
+                            <th class="header"></th>
+                            <td class="dark"></td>
+                            <td class="darker"></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="dark"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="dark"></td>
+                            <td></td>
+                            <td class="dark"></td>
+                            <td class="dark"></td>
+                            <td class="darker"></td>
+                            <td class="dark"></td>
+                            <td class="dark"></td>
+                        </tr>
+                        <tr>
+                            <th class="header">Mon </th>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="dark"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="dark"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="dark"></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="dark"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th class="header"></th>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th class="header">Wed </th>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darker"></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td class="darker"></td>
+                            <td class="darkest"></td>
+                            <td class="darker"></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th class="header"></th>
+                            <td class="dark"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td class="dark"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th class="header">Fri </th>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="dark"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th class="header"></th>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="dark"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td class="darker"></td>
+                            <td class="dark"></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td class="dark"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="darkest"></td>
+                            <td></td>
+                            <td class="darker"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                            <td class="darkest"></td>
+                        </tr>
+                </table>
+                <div class="count">
+                    <p>Learn how we count contribution</p>
+                    <div class="detail">Less
+                        <div class="box box1"></div>
+                        <div class="box box2"></div>
+                        <div class="box box3"></div>
+                        <div class="box box4"></div>
+                        More
+                    </div>
+                </div>
+            </div>
+
+            <div class="contributionactivity">
+                <p>Contribution activity</p>
+                <input type="button" value="2023">
+            </div>
+
+            <div class="currentyear">
+                July <span>2023</span>
+                <div class="hr"></div>
+                <input type="button" value="2022">
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <hr>
+    <footer>
+        <div class="image">
+            <img src="https://img.icons8.com/?size=512&id=zuHqpgzrusU5&format=png" alt="">
+        </div>
+        <span>© 2023 GitHub, Inc.</span>
+        <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Contact GitHub</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
