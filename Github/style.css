@@ -25,12 +25,62 @@ nav{
     align-items: center;
     margin: 0 5px
 }
+.leftnav .logo{
+    height : 32px;
+    width : 32px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 0 20px;
+}
+.leftnav img{
+    height : 40px;
+    width : 40px;
+}
 .rightnav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 5px
+    margin: 0 5px;
+    font-size: 15px;
+}
+.rightnav img{
+    height : 35px;
+    width : 35px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.leftnav i , .rightnav div {
+    padding: 5px 7px;
+    border: 1px solid   #373737;
+    border-radius: 5px;
+    color: #757575;
+    margin: 0 5px;
+}
+.leftnav i:hover , .rightnav div:hover{
+    border-color: #bfbfbf;
+}
+.rightnav div{
+    font-size: 20px;
+    padding: 3px 3px;
+}
+.rightnav i{
+    font-size: 15px;
+    padding: 5px 5px;
+}
+.rightnav .search {
+    padding: 0 5px;
+}
+.rightnav .search input {
+    color: #373737;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-right: 50px;
 }
 
 .nav2 ul{
@@ -42,19 +92,33 @@ nav{
 .nav2 ul li{
     list-style-type: none;
     margin: 0 10px;
+    font-size: 14px;
+}
+.nav2 ul li i , .material-symbols-outlined{
+    color: #757575;
+    margin: 0 5px;
+}
+.nav2 ul li .material-symbols-outlined{
+    font-size: 20px;
+    vertical-align: bottom;
+}
+.nav2 ul li .data{
+    background-color: #2b3137;
+    padding: 2px 7px;
+    border-radius: 50%;
+    margin-left: 5px;
 }
 
 
 .mainbox{
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 .sidebar{
     width: 24vw;
     padding: 0 20px 0 30px;
-    margin-top: -120px;
+    margin-top: 30px;
 }
 .sidebar .profileimage{
     height: 22vw;
@@ -73,7 +137,7 @@ nav{
     width: 30px;
     border-radius: 50%;
     background-color: black;
-    border: 0.1px solid white;
+    border: 0.1px solid  #373737;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,7 +163,7 @@ nav{
     margin-bottom: 15px;
     background-color: #2b3137;
     border-radius: 5px;
-    border: 1px solid #757575;
+    border: 1px solid  #373737;
     color: #b3b1b1;
 }
 .sidebar .follow a{
@@ -420,11 +484,129 @@ nav{
     outline: none;
     background-color: transparent;
     color: white;
+    padding: 10px 40px; 
 }
 .maincontainer .currentyear input:hover{
-    padding: 10px 40px; 
     background-color:#2b3137;
     border-radius: 7px;
+}
+.activitybox{
+    display: flex;
+    flex-direction: row;
+}
+.activitybox .activitydetail{
+    width: 70%;
+}
+.activitybox .activitydetail p{
+    color: whitesmoke;
+    font-size: 15px;
+}
+.activitybox .line{
+    margin-left: 20px;
+    width: 1px;
+    height: 200px;
+    background-color: #2b3137;
+}
+.activitybox .detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -20px;
+    margin-top: 20px;
+}
+.activitybox .detail .left{
+    display: flex;
+    flex-direction: row;
+}
+.activitybox .detail .left span{
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    padding: 7px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.activitybox .detail2{
+    margin-left: 30px;
+    margin-top: -2px;
+}
+.activitybox .detail2 a{
+    text-decoration: none;
+    color: #0d74e7;
+    margin-right: 5px;
+}
+.activitybox .detail2 .ratebar1{
+    height: 8px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #208237;
+    margin-right: 40px;
+}
+.activitybox .detail3{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.activitybox .detail3 a{
+    text-decoration: none;
+    color: #0d74e7;
+    margin-right: 5px;
+}
+.activitybox .detail3 .ratebar2{
+    height: 8px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: #58c872;
+    margin-right: 140px;
+}
+.activitybox .detail4 {
+    margin-top: 25px;
+}
+.activitybox .detail5 .left span{
+    margin-left: 40px;
+    margin-right: -1px;
+    background-color: transparent;
+}
+.activitybox .detail5 .left a{
+    text-decoration: none;
+    color: #0d74e7;
+}
+.activitybox .detail5 .center{
+    display: flex;
+    flex-direction: row;
+}
+.activitybox .detail5 .center .circle{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #c69ad9;
+    margin-right: 3px;
+    vertical-align: baseline;
+}
+.activitybox .detail5 p{
+    margin: 0;
+    padding: 0;
+}
+
+.activity input[type="button"]{
+    width: 85%;
+    border: 0.1px solid #373737;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    padding: 8px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: whitesmoke;
+}
+.activity .lastline{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+.activity .lastline a{
+    text-decoration: none;
+    color: #0d74e7;
 }
 
 
