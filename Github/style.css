@@ -93,6 +93,7 @@ nav{
     list-style-type: none;
     margin: 0 10px;
     font-size: 14px;
+    display: flex;
 }
 .nav2 ul li i , .material-symbols-outlined{
     color: #757575;
@@ -654,4 +655,50 @@ footer ul li a{
 }
 footer ul li a:hover{
     text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    
+    .mainbox{
+        flex-wrap: wrap;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .maincontainer{
+        width: 100%;
+    }
+    nav{
+        flex-wrap: wrap;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    footer ul {
+        flex-wrap: wrap;
+    }
+    .repositories {
+        flex-wrap: wrap;
+    }
+    .maincontainer .repository{
+        width: 100%;
+    }
+    .sidebar .profileimage{
+        margin-bottom: 50px;
+    }
+    .sidebar .status{
+        width: 350%;
+        top: 120%;
+        left: 0;
+        margin-right: 20px;
+        border-radius: 5px;
+    }
+    .search{
+        display: none;
+    }
+    .dropdown{
+        display: none;
+    }
 }
